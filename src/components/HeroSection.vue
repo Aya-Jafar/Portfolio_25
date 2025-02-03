@@ -16,7 +16,7 @@ import Nav from "./Nav.vue";
         class="flex flex-col w-full lg:w-1/2 justify-between items-start lg:text-left"
       >
         <h1
-          class="text-[3rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[6rem] font-bold  leading-tight lg:leading-[5rem] xl:leading-[6.5rem] md:h-auto"
+          class="text-[3rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[6rem] font-bold leading-tight lg:leading-[5rem] xl:leading-[6.5rem] md:h-auto"
         >
           <span class="typing">Aya Jafar</span>
         </h1>
@@ -32,7 +32,12 @@ import Nav from "./Nav.vue";
           type="button"
           class="mt-10 text-white bg-[#013fbd] hover:bg-blue-800 font-medium rounded-lg text-sm px-8 py-3 me-2 mb-2 dark:hover:bg-blue-700 focus:outline-none"
         >
-          <p class="text-[1rem] font-regular font-customFont">Download CV</p>
+          <a
+            href="/cv.pdf"
+            class="text-[1rem] font-regular font-customFont"
+            download
+            >Download CV</a
+          >
         </button>
       </div>
 
@@ -50,33 +55,32 @@ import Nav from "./Nav.vue";
   </div>
 </template>
 
-
 <style scoped>
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-
-  @keyframes blink {
-    50% {
-      opacity: 0;
-    }
-  }
-
-  .typing {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
+@keyframes typing {
+  from {
     width: 0;
-    animation: typing 3s steps(20, end) infinite;
   }
+  to {
+    width: 100%;
+  }
+}
 
-  .cursor {
-    display: inline-block;
- animation: blink 0.8s infinite;
+@keyframes blink {
+  50% {
+    opacity: 0;
   }
+}
+
+.typing {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 0.8s infinite;
+}
 </style>

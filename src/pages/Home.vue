@@ -2,14 +2,14 @@
 
 <script setup lang="ts">
 import HeroSection from "../../src/components/HeroSection.vue";
-import ExploreCards from "../components/ExploreCards.vue";
-import FeaturesCards from "../components/FeaturesCards.vue";
+import AboutMe from "../components/AboutMe.vue"
+import ProjectsCards from "../components/ProjectsCards.vue"
 </script>
 
 <template>
   <HeroSection />
-  <FeaturesCards/>
-  <ExploreCards />
+  <AboutMe/>
+  <ProjectsCards />
 </template>
 
 <style scoped></style>
