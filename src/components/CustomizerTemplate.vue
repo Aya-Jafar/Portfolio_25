@@ -24,12 +24,12 @@ const filteredSlotNames = computed(() => {
 
 <template>
   <div
-    class="bg-[url('../src/assets/bg-2.png')] h-[100vh] w-screen text-white bg-cover bg-center"
+    class="bg-[url('../src/assets/bg-2.png')] h-[100vh] w-screen text-white bg-cover bg-center pb-10"
   >
     <Nav />
 
     <div
-      class="container flex items-center justify-between border-[0.1px] border-[rgba(255,255,255,0.3)] rounded-xl !mx-20 px-20 h-[85vh] overflow-y-scroll"
+      class="container flex items-center justify-between border-[0.1px] border-[rgba(255,255,255,0.3)] rounded-xl !mx-20 px-20 h-[90vh] overflow-y-scroll  mb-10"
     >
       <div class="flex-col w-[40%]">
         <!-- Iterate through available slots (excluding 'component-to-customize' and 'code') -->

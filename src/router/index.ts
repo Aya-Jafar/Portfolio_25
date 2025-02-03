@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../pages/Home.vue";
-import Buttons from "../pages/customizers/Buttons.vue";
+import ProjectDetail from "../pages/ProjectDetail.vue";
 
 
 
 
 const routes = [
   { path: "/", component: Home },
-  { path: "/buttons", component: Buttons },
+  { path: "/project/:name", component: ProjectDetail },
 ];
 
 const router = createRouter({

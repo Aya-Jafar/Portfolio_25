@@ -23,7 +23,7 @@ const router = useRouter();
     <!-- Cards -->
     <div class="flex justify-center items-center flex-wrap w-full gap-5 mt-10">
       <ProjectCard
-        path="'/buttons'"
+        path="/project/AI Artistry"
         img="../../src/assets/projects/ai-art.png"
         title="AI Artistry"
         subtitle="React.js , Django , Websockets, Firebase , Gemini API, huggingface"
