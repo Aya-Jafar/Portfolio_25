@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useRouter } from "vue-router";
 import ProjectCard from "./ProjectCard.vue";
+import { allProjects } from "../utils/data.ts";
 
 const router = useRouter();
 </script>
@@ -22,30 +23,14 @@ const router = useRouter();
 
     <!-- Cards -->
     <div class="flex justify-center items-center flex-wrap w-full gap-5 mt-10">
-      <ProjectCard
-        path="/project/AI Artistry"
-        img="../../src/assets/projects/ai-art.png"
-        title="AI Artistry"
-        subtitle="React.js , Django , Websockets, Firebase , Gemini API, huggingface"
-        extraStyle="'-bottom-10 -right-10 bg-[#EC5C87]'"
-
-      />
-
-      <ProjectCard
-        path="'/buttons'"
-        img="../../src/assets/projects/heal-ai.png"
-        title="Heal Tech.AI"
-        subtitle="React.js , Typescript , Django , Firebase, Jest"
-        extraStyle="'-bottom-10 -right-10 bg-[#EC5C87]'"
-      />
-
-      <ProjectCard
-        path="'/buttons'"
-        img="../../src/assets/projects/Medium Banner Landscape Design.png"
-        title="Sound Shop"
-        subtitle="React.js , Django, bootstrap"
-        extraStyle="'-bottom-10 -right-10 bg-[#EC5C87]'"
-      />
+      <div v-for="(project, index) in allProjects" :key="index">
+        <ProjectCard
+          :path="project.path"
+          :img="project.img"
+          :title="project.title"
+          :subtitle="project.subtitle"
+        />
+      </div>
     </div>
   </div>
 </template>
