@@ -16,7 +16,7 @@ import Nav from "./Nav.vue";
         class="flex flex-col w-full lg:w-1/2 justify-between items-start lg:text-left"
       >
         <h1
-          class="text-[3rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[6rem] font-bold leading-tight lg:leading-[5rem] xl:leading-[6.5rem] md:h-auto"
+          class="font-customFont text-[3rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[6rem] font-bold leading-tight lg:leading-[5rem] xl:leading-[6.5rem] md:h-auto"
         >
           <span class="typing">Aya Jafar</span>
         </h1>
@@ -27,6 +27,32 @@ import Nav from "./Nav.vue";
           <span class="font-bold">art</span> and
           <span class="font-bold">code</span> 🎨💻
         </p>
+
+        <div class="flex flex-col gap-6 items-center lg:items-start mt-7">
+          <div class="flex gap-6">
+            <a href="https://github.com/Aya-Jafar" target="_blank">
+              <img
+                src="https://img.icons8.com/ios/50/FFFFFF/github.png"
+                alt="GitHub"
+                class="w-10 h-10"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/aya-jafar/" target="_blank">
+              <img
+                src="https://img.icons8.com/ios/50/FFFFFF/linkedin.png"
+                alt="LinkedIn"
+                class="w-10 h-10"
+              />
+            </a>
+            <a href="mailto:aya.jafar002@gmail.com">
+              <img
+                src="https://img.icons8.com/ios/50/FFFFFF/email.png"
+                alt="Email"
+                class="w-10 h-10"
+              />
+            </a>
+          </div>
+        </div>
 
         <button
           type="button"
@@ -46,8 +72,8 @@ import Nav from "./Nav.vue";
         class="w-full lg:w-3/5 flex justify-center items-center mt-10 lg:mt-0 bg-[#020911] md:h-[70vh] sm:h-[50vh] h-full rounded-[1vw] overflow-hidden"
       >
         <img
-          src="../../src/assets/p.jpg"
-          alt="GIF"
+          src="../../src/assets/me.png"
+          alt="me"
           class="w-full h-full object-cover"
         />
       </div>
@@ -76,7 +102,7 @@ import Nav from "./Nav.vue";
   overflow: hidden;
   white-space: nowrap;
   width: 0;
-  animation: typing 3s steps(20, end) infinite;
+  animation: typing 3s steps(20, end) forwards;
 }
 
 .cursor {

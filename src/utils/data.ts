@@ -1,6 +1,3 @@
-import aiArt2 from "../assets/projects/ai-art-2.png";
-import imagine from "../assets/projects/imagine.jpg";
-
 export const allProjects = [
   {
     path: "/project/AI Artistry",
@@ -25,7 +22,10 @@ export const allProjects = [
 
     githubLink: "https://github.com/Aya-Jafar/AI-ARTISTRY",
     activeLink: "https://ai-artistry-01.netlify.app/",
-    extraImages: [aiArt2, imagine],
+    extraImages: [
+      "../../src/assets/projects/ai-art-2.png",
+      "../../src/assets/projects/imagine.jpg",
+    ],
   },
   {
     path: "/project/Heal Tech.AI",
@@ -41,8 +41,56 @@ export const allProjects = [
     subtitle: "React.js , Django, bootstrap",
     // extraStyle: "-bottom-10 -right-10 bg-[#EC5C87]",
   },
+
+  {
+    path: "/project/Sound Shop",
+    img: "../../src/assets/projects/res.png",
+    title: "Resutant Website",
+    subtitle: "html,css , vanilla js",
+    // extraStyle: "-bottom-10 -right-10 bg-[#EC5C87]",
+  },
+
+  {
+    path: "/project/Book Shop",
+    img: "../../src/assets/projects/books.png",
+    title: "Book library",
+    subtitle: "React.js",
+    // extraStyle: "-bottom-10 -right-10 bg-[#EC5C87]",
+  },
+
+  {
+    path: "/project/Book Shop",
+    img: "../../src/assets/projects/cartoon.png",
+    title: "Book library",
+    subtitle: "React.js",
+    // extraStyle: "-bottom-10 -right-10 bg-[#EC5C87]",
+  },
+
+  {
+    path: "/project/Book Shop",
+    img: "../../src/assets/projects/little-lemon.png",
+    title: "Little-lemon",
+    subtitle: "React.js",
+    // extraStyle: "-bottom-10 -right-10 bg-[#EC5C87]",
+  },
 ];
 
 export const getProjectData = (projectName: string) => {
   return allProjects.find((project) => project.title === projectName);
 };
+
+
+
+
+
+export const artworks = [
+  {
+    link: "https://www.instagram.com/p/CKEjbIQFOSE/?img_index=1",
+  },
+  {
+    link: "https://www.instagram.com/p/CJHI0hKlnd6/?img_index=1",
+  },
+  {
+    link: "https://www.instagram.com/p/CJHI0hKlnd6/?img_index=1",
+  },
+];

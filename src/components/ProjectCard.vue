@@ -35,7 +35,7 @@ const props = defineProps({
 <template>
   <div class="card-wrapper" @click="router.push(props.path)">
     <div
-      :class="`absolute -bottom-10 -left-10 w-[20vw] h-[20vh]  ${props.extraStyle || 'bg-blue-500' } opacity-30 blur-3xl rounded-full pointer-events-none`"
+      :class="`absolute -bottom-10 -left-10 w-[20vw] h-[20vh]   opacity-30 blur-3xl rounded-full pointer-events-none`"
     ></div>
 
     <img
