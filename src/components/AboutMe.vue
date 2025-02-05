@@ -27,7 +27,7 @@ import TechSkill from "./TechSkills.vue";
         ></div>
 
         <p class="card-subtitle w-full text-balance">
-          I'm a web developer, machine learning enthusiast, and artist who loves
+          I'm a web developer with almost 2 years experience , machine learning enthusiast, and artist who loves
           crafting beautiful, user-friendly websites. I tinker with AI to build
           smart solutions and use art as my creative playground. Blending code,
           intelligence, and creativity, I aim to make experiences that wow,
