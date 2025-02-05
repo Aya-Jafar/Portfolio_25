@@ -16,10 +16,9 @@ onMounted(() => {
   currentData.value = getProjectData(projectName) as ProjectData;
 });
 
-watchEffect(()=>{
-  console.log(currentData.value );
-})
-
+watchEffect(() => {
+  console.log(currentData.value);
+});
 </script>
 
 <template>
@@ -78,7 +77,11 @@ watchEffect(()=>{
         </a>
 
         <!-- Active Link -->
-        <a :href="currentData?.activeLink" class="flex-1" v-if="currentData?.activeLink">
+        <a
+          :href="currentData?.activeLink"
+          class="flex-1"
+          v-if="currentData?.activeLink"
+        >
           <div
             class="bg-gray-900 hover:bg-gray-800 mt-10 p-4 rounded-lg shadow-md flex items-center justify-center gap-2 cursor-pointer w-full"
           >
@@ -95,11 +98,37 @@ watchEffect(()=>{
 
     <!-- Images -->
     <template v-slot:code>
-      <div
-        class="flex flex-col gap-5 w-full mt-2"
-        v-for="img in currentData?.extraImages"
-      >
-        <img :src="img" alt="Image" class="w-full h-auto" />
+      <!-- Color pallete -->
+      <!-- <div class="flex gap-2 w-full items-end justify-end mb-3">
+        <div
+          v-for="color in currentData?.colors"
+          :key="color"
+          :style="{ backgroundColor: color }"
+          class="w-16 h-10 rounded-md shadow-md"
+        ></div>
+      </div> -->
+
+      <div class="flex gap-5 w-full">
+        <!-- Images Container (Stacked Vertically) -->
+        <div class="flex flex-col gap-5 w-full mt-2">
+          <img
+            v-for="img in currentData?.extraImages"
+            :key="img"
+            :src="img"
+            alt="Image"
+            class="w-full h-auto"
+          />
+        </div>
+
+        <!-- Colors Container (Side by Side) -->
+        <div class="flex flex-col gap-4 items-end justify-center">
+          <div
+            v-for="color in currentData?.colors"
+            :key="color"
+            :style="{ backgroundColor: color }"
+            class="w-10 h-7 rounded-md shadow-md"
+          ></div>
+        </div>
       </div>
     </template>
   </CustomizerTemplate>

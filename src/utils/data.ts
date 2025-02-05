@@ -25,6 +25,8 @@ export const allProjects = [
       "../../src/assets/projects/ai-art-2.png",
       "../../src/assets/projects/imagine.jpg",
     ],
+
+    colors: ["#000000", "#332C2B", "#C7C6AC", "#4ED5FD", "#EFEFEF"],
   },
   {
     path: "/project/Heal Tech.AI",
@@ -36,7 +38,7 @@ export const allProjects = [
 `,
 
     features: [
-      "🤖 AI Medical Services with ML algorithms.",
+      "🤖 AI Medical Services with LMMs models.",
       "🔐 Secure login via Firebase.",
       "⚙️ Scalable Django API backend.",
       "🔄 Real-time data sync with Firebase.",
@@ -47,6 +49,7 @@ export const allProjects = [
       "../../src/assets/projects/heal1.png",
       "../../src/assets/projects/heal2.png",
     ],
+    colors: ["#040A21", "#0546C6", "#0283CB", "#01E8FE", "#B20D6C", "#F33E73"],
   },
   {
     path: "/project/Sound Shop",
@@ -68,7 +71,7 @@ export const allProjects = [
     ],
     githubLink: "https://github.com/Aya-Jafar/SoundShop-web-app",
 
-    // extraStyle: "-bottom-10 -right-10 bg-[#EC5C87]",
+    colors: ["#000000", "#15161A", "#3B4046", "#dc4949", "#E9834A"],
   },
 
   {
@@ -91,7 +94,7 @@ export const allProjects = [
       "../../src/assets/projects/res1.png",
       "../../src/assets/projects/res2.png",
     ],
-    // extraStyle: "-bottom-10 -right-10 bg-[#EC5C87]",
+    colors: ["#020608", "#222224", "#646464", "#313E01", "#604522"],
   },
   {
     path: "/project/Little Lemon",
@@ -113,7 +116,7 @@ export const allProjects = [
       "../../src/assets/projects/lemon2.png",
     ],
 
-    // extraStyle: "-bottom-10 -right-10 bg-[#EC5C87]",
+    colors: ["#2B292B", "#495E57", "#F4CE15", "#FFFFFF"],
   },
   {
     path: "/project/Favourite cartoon",
@@ -135,6 +138,7 @@ export const allProjects = [
     ],
 
     githubLink: "https://github.com/Aya-Jafar/favourite-cartoon-app",
+    colors: ["#000000", "#EF6417", "#675F58", "#F2F2F2"],
   },
 
   {
@@ -157,6 +161,7 @@ export const allProjects = [
       "../../src/assets/projects/books1.png",
       "../../src/assets/projects/books2.png",
     ],
+    colors: ["#000000", "#F43E54", "#1B7FD0", "#FEFEFE"],
   },
 ];
 
