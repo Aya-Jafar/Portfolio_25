@@ -1,5 +1,15 @@
 <template>
   <div class="flex gap-4 flex-wrap items-center">
+    <!-- Git -->
+    <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+      <img
+        src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
+        alt="git"
+        width="50"
+        height="40"
+      />
+    </a>
+
     <!-- Python -->
     <a href="https://www.python.org" target="_blank" rel="noreferrer">
       <img
@@ -20,41 +30,11 @@
       />
     </a>
 
-    <!-- Figma -->
-    <a href="https://www.figma.com/" target="_blank" rel="noreferrer">
-      <img
-        src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg"
-        alt="figma"
-        width="50"
-        height="40"
-      />
-    </a>
-
-    <!-- Git -->
-    <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
-      <img
-        src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
-        alt="git"
-        width="50"
-        height="40"
-      />
-    </a>
-
     <!-- Pandas -->
     <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer">
       <img
         src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg"
         alt="pandas"
-        width="50"
-        height="40"
-      />
-    </a>
-
-    <!-- Postman -->
-    <a href="https://postman.com" target="_blank" rel="noreferrer">
-      <img
-        src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
-        alt="postman"
         width="50"
         height="40"
       />
@@ -137,6 +117,15 @@
         height="40"
       />
     </a>
+    <!-- Bootstrap -->
+    <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png"
+        alt="bootstrap"
+        width="50"
+        height="40"
+      />
+    </a>
 
     <!-- Jest -->
     <a href="https://jestjs.io/" target="_blank" rel="noreferrer">
@@ -168,11 +157,28 @@
       />
     </a>
 
-    <!-- Bootstrap -->
-    <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer">
+    <a href="https://huggingface.co/" target="_blank" rel="noreferrer">
       <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png"
-        alt="bootstrap"
+        src="https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo.png"
+        alt="hf"
+        width="50"
+        height="40"
+      />
+    </a>
+    <!-- Figma -->
+    <a href="https://www.figma.com/" target="_blank" rel="noreferrer">
+      <img
+        src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg"
+        alt="figma"
+        width="50"
+        height="40"
+      />
+    </a>
+
+    <a href="https://www.i18next.com/" target="_blank" rel="noreferrer">
+      <img
+        src="https://cdn-images-1.medium.com/max/1200/1*B7NETmU4gIYjuUaAyP9p5g.png"
+        alt="i18n"
         width="50"
         height="40"
       />
