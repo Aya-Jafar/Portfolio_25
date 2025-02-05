@@ -9,16 +9,16 @@ import Nav from "./Nav.vue";
     <!-- Nav bar -->
     <Nav />
 
-    <!-- Motto and GIF container -->
+    <!-- Motto and image container -->
     <div class="px-20 flex flex-col lg:flex-row items-center mt-10 md:mt-20">
-      <!-- Motto & Description -->
+      <!-- Title & Description -->
       <div
         class="flex flex-col w-full lg:w-1/2 justify-between items-start lg:text-left"
       >
         <h1
           class="font-customFont text-[3rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[6rem] font-bold leading-tight lg:leading-[5rem] xl:leading-[6.5rem] md:h-auto"
         >
-          <span class="typing">Aya Jafar</span>
+          <span class="typing font-customFont">Hello World</span>
         </h1>
         <p
           class="text-[1rem] sm:text-[1.5rem] md:text-[1.8rem] min-lg:text-[2rem] font-thin mt-4 w-3/4 lg:leading-[2rem]"
@@ -67,14 +67,13 @@ import Nav from "./Nav.vue";
         </button>
       </div>
 
-      <!-- GIF -->
       <div
-        class="w-full lg:w-3/5 flex justify-center items-center mt-10 lg:mt-0 bg-[#020911] md:h-[70vh] sm:h-[50vh] h-full rounded-[1vw] overflow-hidden"
+        class="w-full lg:w-3/5 flex justify-center items-center mt-10 lg:mt-0 bg-[#020911] md:h-[70vh] sm:h-[50vh] h-full rounded-[1vw] overflow-hidden group"
       >
         <img
           src="../../src/assets/me.png"
           alt="me"
-          class="w-full h-full object-cover"
+          class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
         />
       </div>
     </div>
