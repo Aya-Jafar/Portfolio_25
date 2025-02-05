@@ -16,7 +16,7 @@ const setHoveredArtwork = (newValue: any) => {
 <template>
   <div
     id="artworks"
-    class="explorer max-sm:mt-[60vh] bg-[url('../src/assets/bg-2.png')] h-[250vh] w-screen text-white bg-cover bg-center md:pt-[20vh] flex flex-col items-start font-customFont"
+    class="explorer max-sm:mt-[60vh] bg-[url('../src/assets/bg-2.png')] h-[210vh] w-screen text-white bg-cover bg-center md:pt-[20vh] flex flex-col items-start font-customFont"
   >
     <div class="px-20 flex lg:flex-row">
       <!-- Motto & Description -->
@@ -40,10 +40,7 @@ const setHoveredArtwork = (newValue: any) => {
         :onMouseOut="() => setHoveredArtwork(null)"
         class="relative group w-auto cursor-pointer"
       >
-        <ArtworkCard
-          :img="`${index + 1}`"
-          :link="artwork.link"
-        />
+        <ArtworkCard :img="`${index + 1}`" :link="artwork.link" />
         <a
           class="hover-text opacity-0 group-hover:opacity-100 transition-opacity duration-300"
           :href="artwork.link"
@@ -54,14 +51,14 @@ const setHoveredArtwork = (newValue: any) => {
     </div>
 
     <div class="flex items-center justify-center w-full mt-10">
-      <button
-        type="button"
-        class="text-[1rem] font-regular font-customFont text-white bg-[#013fbd] hover:bg-blue-800 font-medium rounded-lg text-sm px-8 py-3 dark:hover:bg-blue-700 focus:outline-none"
-      >
-        <a href="https://www.instagram.com/_aya.jaffar_/" target="_blank">
+      <a href="https://www.instagram.com/_aya.jaffar_/" target="_blank">
+        <button
+          type="button"
+          class="text-[1rem] font-regular font-customFont text-white bg-[#013fbd] hover:bg-blue-800 font-medium rounded-lg text-sm px-8 py-3 dark:hover:bg-blue-700 focus:outline-none"
+        >
           View More
-        </a>
-      </button>
+        </button>
+      </a>
     </div>
   </div>
 </template>

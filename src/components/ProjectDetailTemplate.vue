@@ -29,7 +29,7 @@ const filteredSlotNames = computed(() => {
     <Nav />
 
     <div
-      class="container flex items-center justify-between border-[0.1px] border-[rgba(255,255,255,0.3)] rounded-xl !mx-20 px-20 h-[90vh] overflow-y-scroll mb-10"
+      class="container flex items-center justify-between border-[0.1px] border-[rgba(255,255,255,0.3)] rounded-xl !mx-20 px-20 h-[87vh] overflow-y-scroll"
     >
       <div class="flex-col w-[40%]">
         <div v-for="(slotName, index) in filteredSlotNames" :key="index">

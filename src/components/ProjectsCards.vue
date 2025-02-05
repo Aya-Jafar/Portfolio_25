@@ -8,14 +8,14 @@ const router = useRouter();
 
 <template>
   <div
-  id="projects"
+    id="projects"
     class="explorer max-sm:pt-[10vh] bg-[url('../src/assets/bg-2.png')] h-[190vh] w-screen text-white bg-cover bg-center md:pt-[20vh] flex flex-col items-start font-customFont"
   >
-    <div class="px-20 flex lg:flex-row ">
+    <div class="px-20 flex lg:flex-row">
       <!-- Motto & Description -->
       <div class="flex w-full items-start sm:mt-[10vh]">
         <h1
-          class=" text-[2rem] sm:text-[4.5rem] md:text-[4.5rem] lg:text-[5rem] font-bold font-customFont leading-tight lg:leading-[5rem] xl:leading-[6.5rem] md:h-auto"
+          class="text-[2rem] sm:text-[4.5rem] md:text-[4.5rem] lg:text-[5rem] font-bold font-customFont leading-tight lg:leading-[5rem] xl:leading-[6.5rem] md:h-auto"
         >
           Projects<br />
         </h1>
@@ -33,13 +33,24 @@ const router = useRouter();
         />
       </div>
     </div>
+
+    <div class="flex items-center justify-center w-full mt-10">
+      <a href="https://github.com/Aya-Jafar" target="_blank">
+        <button
+          type="button"
+          class="text-[1rem] font-regular font-customFont text-white bg-[#013fbd] hover:bg-blue-800 font-medium rounded-lg text-sm px-8 py-3 dark:hover:bg-blue-700 focus:outline-none"
+        >
+          View More
+        </button>
+      </a>
+    </div>
   </div>
 </template>
 
 <style scoped>
-@media (min-width: 0px) and (max-width:999px) {
-  .explorer{
-    padding:0 5rem;
+@media (min-width: 0px) and (max-width: 999px) {
+  .explorer {
+    padding: 0 5rem;
     height: 240vh;
   }
 

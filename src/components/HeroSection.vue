@@ -25,7 +25,7 @@ import Nav from "./Nav.vue";
         >
           Crafting experiences at the intersection of
           <span class="font-bold">art</span> and
-          <span class="font-bold">code</span> 🎨💻
+          <span class="font-bold">code</span> 
         </p>
 
         <div class="flex flex-col gap-6 items-center lg:items-start mt-7">
