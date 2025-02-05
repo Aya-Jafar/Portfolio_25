@@ -13,7 +13,7 @@ const setHoveredArtwork = (newValue: any) => {
 <template>
   <div
     id="artworks"
-    class="explorer max-sm:mt-[60vh] bg-[url('../src/assets/bg-2.png')] h-[210vh] w-screen text-white bg-cover bg-center md:pt-[20vh] flex flex-col items-start font-customFont"
+    class="explorer max-sm:mt-[60vh] bg-[url('/assets/bg-2.png')] h-[210vh] w-screen text-white bg-cover bg-center md:pt-[20vh] flex flex-col items-start font-customFont"
   >
     <div class="px-20 flex lg:flex-row">
       <!-- Motto & Description -->

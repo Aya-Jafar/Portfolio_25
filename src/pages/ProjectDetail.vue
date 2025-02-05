@@ -85,7 +85,7 @@ watchEffect(() => {
           <div
             class="bg-gray-900 hover:bg-gray-800 mt-10 p-4 rounded-lg shadow-md flex items-center justify-center gap-2 cursor-pointer w-full"
           >
-            <img src="../assets/Link Icon.png" alt="link" class="w-10 h-10" />
+            <img src="/assets/Link Icon.png" alt="link" class="w-10 h-10" />
             <p
               class="text-blue-300 lg:text-[1.5rem] md:text-[1.3rem] font-customFont"
             >

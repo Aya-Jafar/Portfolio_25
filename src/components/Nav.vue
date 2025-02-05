@@ -20,7 +20,7 @@ const toggleMenu = () => {
       class="flex gap-2 items-center cursor-pointer font-customFont"
       @click="router.push('/')"
     >
-      <img src="../assets/logo.png" alt="Logo" class="h-10 lg:h-20" />
+      <img src="/assets/logo.png" alt="Logo" class="h-10 lg:h-20" />
     </div>
 
     <!-- Desktop Nav -->

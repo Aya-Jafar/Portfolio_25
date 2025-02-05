@@ -24,7 +24,7 @@ const filteredSlotNames = computed(() => {
 
 <template>
   <div
-    class="bg-[url('../src/assets/bg-2.png')] min-h-screen w-screen text-white bg-cover bg-center pb-5"
+    class="bg-[url('/assets/bg-2.png')] min-h-screen w-screen text-white bg-cover bg-center pb-5"
   >
     <Nav />
 

@@ -6,7 +6,7 @@ import { allProjects } from "../utils/data.ts";
 <template>
   <div
     id="projects"
-    class="explorer max-sm:pt-[10vh] bg-[url('../src/assets/bg-2.png')] h-[190vh] w-screen text-white bg-cover bg-center md:pt-[20vh] flex flex-col items-start font-customFont"
+    class="explorer max-sm:pt-[10vh] bg-[url('/assets/bg-2.png')] h-[190vh] w-screen text-white bg-cover bg-center md:pt-[20vh] flex flex-col items-start font-customFont"
   >
     <div class="px-20 flex lg:flex-row">
       <!-- Motto & Description -->

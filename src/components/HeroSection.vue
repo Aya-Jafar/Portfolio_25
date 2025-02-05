@@ -4,7 +4,7 @@ import Nav from "./Nav.vue";
 
 <template>
   <div
-    class="bg-[url('../src/assets/test.png')] h-[100vh] w-screen text-white bg-cover bg-center"
+    class="bg-[url('/assets/test.png')] h-[100vh] w-screen text-white bg-cover bg-center"
   >
     <!-- Nav bar -->
     <Nav />
@@ -71,7 +71,7 @@ import Nav from "./Nav.vue";
         class="w-full lg:w-3/5 flex justify-center items-center mt-10 lg:mt-0 bg-[#020911] md:h-[70vh] sm:h-[50vh] h-full rounded-[1vw] overflow-hidden group"
       >
         <img
-          src="../../src/assets/me.png"
+          src="/assets/me.png"
           alt="me"
           class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
         />

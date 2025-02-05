@@ -4,7 +4,7 @@
 <template>
   <div
     id="contact"
-    class="features font-customFont bg-[url('../src/assets/bg-2.png')] h-[110vh] w-screen text-white bg-cover bg-center flex flex-col items-start  pb-20"
+    class="features font-customFont bg-[url('/assets/bg-2.png')] h-[110vh] w-screen text-white bg-cover bg-center flex flex-col items-start  pb-20"
   >
     <div class="px-20 flex lg:flex-row items-start">
       <div class="flex w-full items-start text-left sm:mt-[10vh]">
