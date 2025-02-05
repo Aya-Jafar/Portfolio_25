@@ -29,7 +29,7 @@ import Nav from "./Nav.vue";
         </p>
 
         <div class="flex flex-col gap-6 items-center lg:items-start mt-7">
-          <div class="flex gap-6">
+          <div class="flex gap-3">
             <a href="https://github.com/Aya-Jafar" target="_blank">
               <img
                 src="https://img.icons8.com/ios/50/FFFFFF/github.png"

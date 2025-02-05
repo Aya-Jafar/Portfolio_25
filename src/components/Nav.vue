@@ -12,7 +12,9 @@ const toggleMenu = () => {
 </script>
 
 <template>
-  <div class="h-[10vh] px-10 md:px-20 py-5 flex justify-between items-center relative">
+  <div
+    class="h-[10vh] px-10 md:px-20 py-5 flex justify-between items-center relative"
+  >
     <!-- Logo -->
     <div
       class="flex gap-2 items-center cursor-pointer font-customFont"
@@ -26,13 +28,17 @@ const toggleMenu = () => {
       <p @click="scrollToSection('about-me')">About me</p>
       <p @click="scrollToSection('projects')">Projects</p>
       <p @click="scrollToSection('artworks')">Artworks</p>
-      <p>Contact me</p>
+      <p @click="scrollToSection('contact')">Contact me</p>
     </div>
 
     <!-- Mobile Hamburger Menu -->
     <div class="md:hidden flex items-center">
       <button @click="toggleMenu">
-        <img src="https://img.icons8.com/?size=100&id=3096&format=png&color=FFFFFF" alt="Menu" class="h-8 w-8" />
+        <img
+          src="https://img.icons8.com/?size=100&id=3096&format=png&color=FFFFFF"
+          alt="Menu"
+          class="h-8 w-8"
+        />
       </button>
     </div>
 
@@ -41,10 +47,38 @@ const toggleMenu = () => {
       v-if="isMenuOpen"
       class="absolute top-[70%] right-0 w-1/2 bg-[#020911] text-white flex flex-col items-center gap-5 py-5 transition-all duration-300 z-50 shadow-lg"
     >
-      <p @click="scrollToSection('about-me'); toggleMenu()">About me</p>
-      <p @click="scrollToSection('projects'); toggleMenu()">Projects</p>
-      <p @click="scrollToSection('artworks'); toggleMenu()">Artworks</p>
-      <p @click="toggleMenu()">Contact me</p>
+      <p
+        @click="
+          scrollToSection('about-me');
+          toggleMenu();
+        "
+      >
+        About me
+      </p>
+      <p
+        @click="
+          scrollToSection('projects');
+          toggleMenu();
+        "
+      >
+        Projects
+      </p>
+      <p
+        @click="
+          scrollToSection('artworks');
+          toggleMenu();
+        "
+      >
+        Artworks
+      </p>
+      <p
+        @click="
+          scrollToSection('contact');
+          toggleMenu();
+        "
+      >
+        Contact me
+      </p>
     </div>
   </div>
 </template>
