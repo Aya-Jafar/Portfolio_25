@@ -19,6 +19,7 @@ const slotNames = computed<string[]>(() =>
 const filteredSlotNames = computed(() => {
   return slotNames.value.filter((slot) => slot.startsWith("option"));
 });
+
 </script>
 
 <template>
@@ -32,21 +33,13 @@ const filteredSlotNames = computed(() => {
     >
       <div class="flex-col w-[40%]">
         <div v-for="(slotName, index) in filteredSlotNames" :key="index">
-          <slot :name="slotName">
-            <!-- Fallback content if no slot is passed -->
-            {{ slotName }}
-          </slot>
+          <slot :name="slotName"></slot>
         </div>
       </div>
 
       <div class="w-[50%]">
-        <!-- Render the customizable component slot -->
-        <center>
-          <slot name="component-to-customize"></slot>
-        </center>
-
         <!-- Dynamic Images based on the project  -->
-        <slot name="code"></slot>
+        <slot name="project"></slot>
       </div>
     </div>
   </div>

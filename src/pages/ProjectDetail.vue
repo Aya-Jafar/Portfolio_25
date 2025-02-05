@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-import CustomizerTemplate from "../components/CustomizerTemplate.vue";
 import { ref, computed, onMounted, watchEffect } from "vue";
 import { useRoute } from "vue-router";
 import { getProjectData } from "../utils/data.ts";
 import { ProjectData } from "../utils/schema.ts";
+import ProjectDetailTemplate from "../components/ProjectDetailTemplate.vue";
 
 const route = useRoute();
 const currentData = ref<ProjectData | null>(null);
@@ -22,7 +22,7 @@ watchEffect(() => {
 </script>
 
 <template>
-  <CustomizerTemplate v-if="currentData !== null">
+  <ProjectDetailTemplate v-if="currentData !== null">
     <template v-slot:option-1>
       <div class="flex items-center gap-5">
         <div
@@ -97,17 +97,7 @@ watchEffect(() => {
     </template>
 
     <!-- Images -->
-    <template v-slot:code>
-      <!-- Color pallete -->
-      <!-- <div class="flex gap-2 w-full items-end justify-end mb-3">
-        <div
-          v-for="color in currentData?.colors"
-          :key="color"
-          :style="{ backgroundColor: color }"
-          class="w-16 h-10 rounded-md shadow-md"
-        ></div>
-      </div> -->
-
+    <template v-slot:project>
       <div class="flex gap-5 w-full">
         <!-- Images Container (Stacked Vertically) -->
         <div class="flex flex-col gap-5 w-full mt-2">
@@ -131,7 +121,7 @@ watchEffect(() => {
         </div>
       </div>
     </template>
-  </CustomizerTemplate>
+  </ProjectDetailTemplate>
 </template>
 
 <style scoped>
