@@ -7,7 +7,7 @@ import TechSkill from "./TechSkills.vue";
   id="about-me"
     class="features bg-[url('../src/assets/bg-2.png')] h-[100vh] w-screen text-white bg-cover bg-center flex flex-col items-start"
   >
-    <div class="px-20 flex lg:flex-row items-start ">
+    <div class="flex lg:flex-row items-start ">
       <div class="flex w-full items-start text-left sm:mt-[10vh]">
         <h1
           class="pl-20 text-[2rem] sm:text-[4.5rem] md:text-[4.5rem] lg:text-[5rem] font-bold font-customFont leading-tight lg:leading-[5rem] xl:leading-[6.5rem] md:h-auto"

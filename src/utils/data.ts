@@ -217,6 +217,17 @@ export const artworks = [
     link: "https://www.instagram.com/p/CJHI0hKlnd6/?img_index=1",
   },
   {
-    link: "https://www.instagram.com/p/CJHI0hKlnd6/?img_index=1",
+    link: "https://www.instagram.com/p/CQy0Tz7lOAc/?img_index=1",
+  },
+  {
+    link: "https://www.instagram.com/p/B83JvYqFjHX/",
+  },
+
+  {
+    link: "https://www.instagram.com/p/CF7Xy-WFske/?img_index=1",
+  },
+
+  {
+    link: "https://www.instagram.com/p/CUfmA2iK6tm/?img_index=1",
   },
 ];
