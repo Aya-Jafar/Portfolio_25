@@ -23,7 +23,7 @@ const submitForm = () => {
 <template>
   <div
     id="contact"
-    class="features bg-[url('../src/assets/bg-2.png')] h-[110vh] w-screen text-white bg-cover bg-center flex flex-col items-start font-customFont pb-20"
+    class="features font-customFont bg-[url('../src/assets/bg-2.png')] h-[110vh] w-screen text-white bg-cover bg-center flex flex-col items-start  pb-20"
   >
     <div class="px-20 flex lg:flex-row items-start">
       <div class="flex w-full items-start text-left sm:mt-[10vh]">
@@ -79,7 +79,7 @@ const submitForm = () => {
 
           <button
             type="submit"
-            class="bg-[#013fbd] hover:bg-blue-800  transition-all text-white font-bold py-3 rounded-md mt-3 w-full"
+            class="bg-[#013fbd] hover:bg-blue-800  transition-all text-white   py-3 rounded-md mt-3 w-full"
           >
             Send Message
           </button>
@@ -94,7 +94,7 @@ const submitForm = () => {
       &copy; {{ new Date().getFullYear() }} Aya Jafar. All Rights Reserved.
     </p>
 
-    <div class="flex justify-center gap-4 mt-3">
+    <div class="flex justify-center gap-3 mt-3">
       <a href="https://github.com/Aya-Jafar" target="_blank">
         <img
           src="https://img.icons8.com/ios/50/FFFFFF/github.png"

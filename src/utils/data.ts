@@ -163,6 +163,46 @@ export const allProjects = [
     ],
     colors: ["#000000", "#F43E54", "#1B7FD0", "#FEFEFE"],
   },
+
+  {
+    path: "/project/Traffic Jam Prediction",
+    img: "../../src/assets/projects/cong.jpg",
+    title: "Traffic Jam Prediction",
+    subtitle: "Python, Pandas, Sklearn",
+
+    description:
+      "A predictive model that analyzes traffic patterns to forecast congestion using AI and data analytics.",
+
+    extraImages: ["../../src/assets/projects/cong.jpg"],
+
+    features: [
+      "🚦 Predicts congestion using historical data.",
+      "📉 Optimizes routes to reduce travel time.",
+      "🔍 Considers weather, time, and road conditions.",
+    ],
+    githubLink: "https://github.com/Aya-Jafar/Traffic-jam-prediction",
+    activeLink: "https://huggingface.co/spaces/ayajafar/traffic-jam-predictor",
+  },
+
+  {
+    path: "/project/Customer Churn Prediction",
+    img: "../../src/assets/projects/customer.png",
+    title: "Customer Churn Prediction",
+    subtitle: "Python, Pandas, Sklearn",
+
+    description:
+      "📉 Predicts customer churn using machine learning to help businesses retain users.",
+
+    features: [
+      "🤖 Uses machine learning to analyze customer behavior.",
+      "📊 Identifies key factors influencing churn.",
+      "🔍 Provides actionable insights to improve retention.",
+    ],
+
+    extraImages: ["../../src/assets/projects/customer.png"],
+
+    githubLink: "https://github.com/Aya-Jafar/Customer-churn-prediction",
+  },
 ];
 
 export const getProjectData = (projectName: string) => {
