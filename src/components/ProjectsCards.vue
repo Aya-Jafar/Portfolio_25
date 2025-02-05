@@ -1,9 +1,6 @@
 <script setup lang="ts">
-import { useRouter } from "vue-router";
 import ProjectCard from "./ProjectCard.vue";
 import { allProjects } from "../utils/data.ts";
-
-const router = useRouter();
 </script>
 
 <template>

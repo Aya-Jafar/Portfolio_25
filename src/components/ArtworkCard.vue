@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { useRouter } from "vue-router";
-
-const router = useRouter();
 
 const props = defineProps({
   link: {
@@ -16,7 +13,6 @@ const props = defineProps({
   },
 });
 
-console.log(props.img);
 </script>
 
 <template>

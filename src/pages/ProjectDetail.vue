@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ref, computed, onMounted, watchEffect } from "vue";
+import { ref, onMounted, watchEffect } from "vue";
 import { useRoute } from "vue-router";
 import { getProjectData } from "../utils/data.ts";
 import { ProjectData } from "../utils/schema.ts";

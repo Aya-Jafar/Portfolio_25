@@ -1,10 +1,7 @@
 <script setup lang="ts">
-import { ref, onMounted, nextTick, watchEffect } from "vue";
-import { useRouter } from "vue-router";
+import { ref } from "vue";
 import { artworks } from "../utils/data";
 import ArtworkCard from "./ArtworkCard.vue";
-
-const router = useRouter();
 
 const hoveredArtwork = ref(null);
 

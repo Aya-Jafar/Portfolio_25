@@ -1,23 +1,4 @@
 <script setup lang="ts">
-import { ref } from "vue";
-
-const name = ref("");
-const email = ref("");
-const message = ref("");
-const isSubmitted = ref(false);
-
-const submitForm = () => {
-  if (name.value && email.value && message.value) {
-    isSubmitted.value = true;
-    // Simulate a submission process
-    setTimeout(() => {
-      isSubmitted.value = false;
-      name.value = "";
-      email.value = "";
-      message.value = "";
-    }, 3000);
-  }
-};
 </script>
 
 <template>
