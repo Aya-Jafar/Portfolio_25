@@ -53,20 +53,22 @@ onMounted(() => {
 
     <!-- Links -->
     <template v-slot:option-3>
-      <div class="flex gap-2 justify-center w-full">
+      <div
+        class="flex flex-col sm:flex-row gap-4 sm:gap-2 justify-center w-full"
+      >
         <!-- GitHub Repo -->
-        <a :href="currentData?.githubLink" class="flex-1">
+        <a :href="currentData?.githubLink" class="w-full sm:flex-1">
           <div
-            class="bg-gray-900 hover:bg-gray-800 mt-10 text-white p-4 rounded-lg shadow-md flex items-center justify-center gap-2 cursor-pointer w-full"
+            class="bg-gray-900 hover:bg-gray-800 mt-5 sm:mt-10 text-white p-3 sm:p-4 rounded-lg shadow-md flex items-center justify-center gap-2 cursor-pointer w-full"
           >
             <img
               loading="lazy"
               src="https://img.icons8.com/ios11/512/FFFFFF/github.png"
               alt="GitHub"
-              class="w-10 h-10"
+              class="w-8 sm:w-10 h-8 sm:h-10"
             />
             <p
-              class="text-blue-300 lg:text-[1.5rem] md:text-[1.3rem] font-customFont"
+              class="text-blue-300 text-[1rem] sm:text-[1.3rem] md:text-[1.5rem] font-customFont"
             >
               GitHub Repo
             </p>
@@ -76,20 +78,20 @@ onMounted(() => {
         <!-- Active Link -->
         <a
           :href="currentData?.activeLink"
-          class="flex-1"
+          class="w-full sm:flex-1"
           v-if="currentData?.activeLink"
         >
           <div
-            class="bg-gray-900 hover:bg-gray-800 mt-10 p-4 rounded-lg shadow-md flex items-center justify-center gap-2 cursor-pointer w-full"
+            class="bg-gray-900 hover:bg-gray-800 mt-5 sm:mt-10 p-3 sm:p-4 rounded-lg shadow-md flex items-center justify-center gap-2 cursor-pointer w-full"
           >
             <img
               src="/assets/Link Icon.png"
               alt="link"
-              class="w-10 h-10"
+              class="w-8 sm:w-10 h-8 sm:h-10"
               loading="lazy"
             />
             <p
-              class="text-blue-300 lg:text-[1.5rem] md:text-[1.3rem] font-customFont"
+              class="text-blue-300 text-[1rem] sm:text-[1.3rem] md:text-[1.5rem] font-customFont"
             >
               Active link
             </p>

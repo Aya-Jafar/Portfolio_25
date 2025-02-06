@@ -20,7 +20,6 @@ const filteredSlotNames = computed(() => {
   return slotNames.value.filter((slot) => slot.startsWith("option"));
 });
 </script>
-
 <template>
   <div
     class="bg-[url('/assets/detail-bg.png')] min-h-screen w-screen text-white bg-cover bg-center pb-5"
@@ -28,16 +27,17 @@ const filteredSlotNames = computed(() => {
     <Nav />
 
     <div
-      class="container flex items-center justify-between border-[0.1px] border-[rgba(255,255,255,0.3)] rounded-xl !mx-20 px-20 h-[87vh] overflow-y-scroll"
+      class="container flex flex-col lg:flex-row items-center lg:items-start justify-between border-[0.1px] border-[rgba(255,255,255,0.3)] rounded-xl !mx-5 sm:!mx-10 lg:!mx-20 px-5 sm:px-10 lg:px-20 py-10 h-auto lg:h-[87vh] overflow-y-auto"
     >
-      <div class="flex-col w-[40%]">
+      <!-- Options Section -->
+      <div class="flex-col w-full lg:w-[40%] space-y-5">
         <div v-for="(slotName, index) in filteredSlotNames" :key="index">
           <slot :name="slotName"></slot>
         </div>
       </div>
 
-      <div class="w-[50%]">
-        <!-- Dynamic Images based on the project  -->
+      <!-- Project Image Section -->
+      <div class="w-full lg:w-[50%] mt-10 lg:mt-0">
         <slot name="project"></slot>
       </div>
     </div>
@@ -45,10 +45,16 @@ const filteredSlotNames = computed(() => {
 </template>
 
 <style scoped>
-@media (min-width: 0px) and (max-width: 780px) {
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 780px) {
   :deep(.container) {
-    display: flex;
-    flex-wrap: wrap !important;
     padding-top: 3rem;
     align-items: center;
     width: 100%;
