@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ref, onMounted, watchEffect } from "vue";
+import { ref, onMounted } from "vue";
 import { useRoute } from "vue-router";
 import { getProjectData } from "../utils/data.ts";
 import { ProjectData } from "../utils/schema.ts";
@@ -14,10 +14,6 @@ onMounted(() => {
     : route.params.name;
 
   currentData.value = getProjectData(projectName) as ProjectData;
-});
-
-watchEffect(() => {
-  console.log(currentData.value);
 });
 </script>
 

@@ -5,7 +5,6 @@ export const allProjects = [
     title: "AI Artistry",
     subtitle:
       "React.js , Django , Websockets, Firebase , Gemini API, huggingface",
-    // extraStyle: "-bottom-10 -right-10 bg-[#EC5C87]",
 
     description: `
      Art generation image web app with <span style="font-weight: bold;">React.js</span>,

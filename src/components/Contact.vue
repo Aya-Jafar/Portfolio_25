@@ -6,7 +6,6 @@
     class="features font-customFont bg-[url('/assets/bg-2.png')] h-[110vh] w-screen text-white bg-cover bg-center flex flex-col items-start pb-20"
   >
     <div class="px-20 flex lg:flex-row">
-      <!-- Motto & Description -->
       <div class="flex w-full items-start sm:mt-[10vh]">
         <h1
           class="text-[2rem] sm:text-[4.5rem] md:text-[4.5rem] lg:text-[5rem] font-bold font-customFont leading-tight lg:leading-[5rem] xl:leading-[6.5rem] md:h-auto"

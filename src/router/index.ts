@@ -4,7 +4,6 @@ import ProjectDetail from "../pages/ProjectDetail.vue";
 
 
 
-
 const routes = [
   { path: "/", component: Home },
   { path: "/project/:name", component: ProjectDetail },

@@ -1,10 +1,14 @@
 <script setup lang="ts">
 import ProjectCard from "./ProjectCard.vue";
 import { allProjects } from "../utils/data.ts";
+import { useIntersectionObserver } from "../composables/useIntersectionObserver.ts";
+
+const { isInView, targetRef } = useIntersectionObserver(0.3);
 </script>
 
 <template>
   <div
+    ref="targetRef"
     id="projects"
     class="explorer max-sm:pt-[10vh] bg-[url('/assets/bg-2.png')] h-[190vh] w-screen text-white bg-cover bg-center md:pt-[20vh] flex flex-col items-start font-customFont"
   >
@@ -27,7 +31,11 @@ import { allProjects } from "../utils/data.ts";
         <div
           v-for="(project, index) in allProjects"
           :key="index"
-          class="card-wrapper"
+          class="card-wrapper transition-all duration-700 ease-in-out"
+          :class="{
+            'opacity-100 translate-y-0': isInView,
+            'opacity-0 translate-y-10': !isInView,
+          }"
         >
           <ProjectCard
             :path="project.path"

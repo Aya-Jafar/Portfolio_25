@@ -62,7 +62,6 @@ const props = defineProps({
 
   .card-wrapper {
     width: 75% !important;
-    /* padding-bottom: 2rem; */
   }
   .card-title {
     font-size: 2rem;

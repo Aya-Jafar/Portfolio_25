@@ -2,16 +2,17 @@
 import { ref } from "vue";
 import { artworks } from "../utils/data";
 import ArtworkCard from "./ArtworkCard.vue";
+import { useIntersectionObserver } from "../composables/useIntersectionObserver";
 
+const { isInView, targetRef } = useIntersectionObserver(0.3);
 const hoveredArtwork = ref(null);
 
-const setHoveredArtwork = (newValue: any) => {
-  hoveredArtwork.value = newValue;
-};
+const setHoveredArtwork = (newValue: any) => (hoveredArtwork.value = newValue);
 </script>
 
 <template>
   <div
+    ref="targetRef"
     id="artworks"
     class="explorer bg-[url('/assets/bg-2.png')] h-[210vh] w-screen text-white bg-cover bg-center md:pt-[20vh] flex flex-col items-start font-customFont"
   >
@@ -36,11 +37,15 @@ const setHoveredArtwork = (newValue: any) => {
           :key="index"
           :onMouseOver="() => setHoveredArtwork(artwork)"
           :onMouseOut="() => setHoveredArtwork(null)"
-          class="relative group w-full"
+          class="relative group w-full transition-all duration-700 ease-in-out"
+          :class="{
+            'opacity-100 translate-y-0': isInView,
+            'opacity-0 translate-y-10': !isInView,
+          }"
         >
           <ArtworkCard :img="`${index + 1}`" :link="artwork.link" />
           <a
-           loading="lazy"
+            loading="lazy"
             class="hover-text opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             :href="artwork.link"
           >
