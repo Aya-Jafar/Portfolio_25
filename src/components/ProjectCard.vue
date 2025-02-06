@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useRouter } from "vue-router";
+import { getTitleFontSize } from "../utils/helpers";
 
 const router = useRouter();
 
@@ -30,6 +31,8 @@ const props = defineProps({
     default: "",
   },
 });
+
+
 </script>
 
 <template>
@@ -44,7 +47,9 @@ const props = defineProps({
       class="w-full h-[65%] object-cover rounded-tl-[1vw] rounded-tr-[1vw] border-[0.01px] border-[rgba(255,255,255,0.3)] hover:border-blue-500"
     />
 
-    <h1 class="card-title">{{ props.title }}</h1>
+    <h1 class="card-title" :style="{ fontSize: getTitleFontSize(props.title) }">
+      {{ props.title }}
+    </h1>
     <p class="card-subtitle">{{ props.subtitle }}</p>
   </div>
 </template>
@@ -56,15 +61,11 @@ const props = defineProps({
 
   .card-wrapper {
     width: 75% !important;
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
   }
   .card-title {
     font-size: 2rem;
   }
-  /* .icon {
-    height: 7rem;
-    width: 7rem;
-  } */
 }
 
 .card-wrapper {

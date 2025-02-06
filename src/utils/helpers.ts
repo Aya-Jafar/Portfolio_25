@@ -7,3 +7,15 @@ export const scrollToSection = (sectionId: string) => {
     });
   }
 };
+
+
+export const getTitleFontSize = (title: string) => {
+  const length = title.length;
+  if (length <= 20) {
+    return "2rem"; // Larger size for shorter titles
+  } else if (length <= 30) {
+    return "1.5rem"; // Medium size for medium titles
+  } else {
+    return "1rem"; // Smaller size for longer titles
+  }
+};
