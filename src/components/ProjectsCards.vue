@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard.vue";
 import { allProjects } from "../utils/data.ts";
 import { useIntersectionObserver } from "../composables/useIntersectionObserver.ts";
 
-const { isInView, targetRef } = useIntersectionObserver(0.3);
+const { isInView, targetRef } = useIntersectionObserver(0.2);
 </script>
 
 <template>
