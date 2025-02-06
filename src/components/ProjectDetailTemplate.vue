@@ -19,12 +19,11 @@ const slotNames = computed<string[]>(() =>
 const filteredSlotNames = computed(() => {
   return slotNames.value.filter((slot) => slot.startsWith("option"));
 });
-
 </script>
 
 <template>
   <div
-    class="bg-[url('/assets/bg-2.png')] min-h-screen w-screen text-white bg-cover bg-center pb-5"
+    class="bg-[url('/assets/detail-bg.png')] min-h-screen w-screen text-white bg-cover bg-center pb-5"
   >
     <Nav />
 
