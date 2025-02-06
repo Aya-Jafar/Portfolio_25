@@ -44,6 +44,7 @@ const props = defineProps({
     <img
       :src="props.img"
       alt=""
+      loading="lazy"
       class="w-full h-[65%] object-cover rounded-tl-[1vw] rounded-tr-[1vw] border-[0.01px] border-[rgba(255,255,255,0.3)] hover:border-blue-500"
     />
 

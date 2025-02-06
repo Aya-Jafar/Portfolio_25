@@ -64,6 +64,7 @@ watchEffect(() => {
             class="bg-gray-900 hover:bg-gray-800 mt-10 text-white p-4 rounded-lg shadow-md flex items-center justify-center gap-2 cursor-pointer w-full"
           >
             <img
+              loading="lazy"
               src="https://img.icons8.com/ios11/512/FFFFFF/github.png"
               alt="GitHub"
               class="w-10 h-10"
@@ -85,7 +86,12 @@ watchEffect(() => {
           <div
             class="bg-gray-900 hover:bg-gray-800 mt-10 p-4 rounded-lg shadow-md flex items-center justify-center gap-2 cursor-pointer w-full"
           >
-            <img src="/assets/Link Icon.png" alt="link" class="w-10 h-10" />
+            <img
+              src="/assets/Link Icon.png"
+              alt="link"
+              class="w-10 h-10"
+              loading="lazy"
+            />
             <p
               class="text-blue-300 lg:text-[1.5rem] md:text-[1.3rem] font-customFont"
             >
@@ -102,6 +108,7 @@ watchEffect(() => {
         <!-- Images Container (Stacked Vertically) -->
         <div class="flex flex-col gap-5 w-full mt-2">
           <img
+            loading="lazy"
             v-for="img in currentData?.extraImages"
             :key="img"
             :src="img"

@@ -40,6 +40,7 @@ const setHoveredArtwork = (newValue: any) => {
         >
           <ArtworkCard :img="`${index + 1}`" :link="artwork.link" />
           <a
+           loading="lazy"
             class="hover-text opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             :href="artwork.link"
           >

@@ -10,7 +10,9 @@ import Nav from "./Nav.vue";
     <Nav />
 
     <!-- Motto and image container -->
-    <div class="wrapper px-20 flex flex-col lg:flex-row items-center mt-10 md:mt-20">
+    <div
+      class="wrapper px-20 flex flex-col lg:flex-row items-center mt-10 md:mt-20"
+    >
       <!-- Title & Description -->
       <div
         class="flex flex-col w-full lg:w-1/2 justify-between items-start lg:text-left"
@@ -25,13 +27,14 @@ import Nav from "./Nav.vue";
         >
           Crafting experiences at the intersection of
           <span class="font-bold">art</span> and
-          <span class="font-bold">code</span> 
+          <span class="font-bold">code</span>
         </p>
 
         <div class="flex flex-col gap-6 items-center lg:items-start mt-7">
           <div class="flex gap-3">
             <a href="https://github.com/Aya-Jafar" target="_blank">
               <img
+                loading="lazy"
                 src="https://img.icons8.com/ios/50/FFFFFF/github.png"
                 alt="GitHub"
                 class="w-10 h-10"
@@ -39,6 +42,7 @@ import Nav from "./Nav.vue";
             </a>
             <a href="https://www.linkedin.com/in/aya-jafar/" target="_blank">
               <img
+                loading="lazy"
                 src="https://img.icons8.com/ios/50/FFFFFF/linkedin.png"
                 alt="LinkedIn"
                 class="w-10 h-10"
@@ -46,6 +50,7 @@ import Nav from "./Nav.vue";
             </a>
             <a href="mailto:aya.jafar002@gmail.com">
               <img
+                loading="lazy"
                 src="https://img.icons8.com/ios/50/FFFFFF/email.png"
                 alt="Email"
                 class="w-10 h-10"
@@ -68,9 +73,10 @@ import Nav from "./Nav.vue";
       </div>
 
       <div
-        class="me w-full lg:w-3/5  flex justify-center items-center mt-10 lg:mt-0 bg-[#020911] md:h-[70vh] sm:h-[50vh] h-full rounded-[1vw] overflow-hidden group"
+        class="me w-full lg:w-3/5 flex justify-center items-center mt-10 lg:mt-0 bg-[#020911] md:h-[70vh] sm:h-[50vh] h-full rounded-[1vw] overflow-hidden group"
       >
         <img
+          loading="lazy"
           src="/assets/me.png"
           alt="me"
           class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
@@ -82,23 +88,20 @@ import Nav from "./Nav.vue";
 
 <style scoped>
 @media (min-width: 0px) and (max-width: 999px) {
-  .wrapper{
-    @apply px-10 h-[80vh]
+  .wrapper {
+    @apply px-10 h-[80vh];
   }
-  .typing{
+  .typing {
     /* @apply text-[3.5rem]; */
   }
-  p{
+  p {
     @apply text-[1.5rem] w-full;
-
   }
   .me {
     width: 100%;
     height: 100%;
   }
-
 }
-
 
 @keyframes typing {
   from {

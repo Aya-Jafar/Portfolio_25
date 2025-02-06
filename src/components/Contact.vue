@@ -78,6 +78,7 @@
     <div class="flex justify-center gap-3 mt-3">
       <a href="https://github.com/Aya-Jafar" target="_blank">
         <img
+          loading="lazy"
           src="https://img.icons8.com/ios/50/FFFFFF/github.png"
           alt="GitHub"
           class="w-10 h-10"
@@ -85,6 +86,7 @@
       </a>
       <a href="https://www.linkedin.com/in/aya-jafar" target="_blank">
         <img
+          loading="lazy"
           src="https://img.icons8.com/ios/50/FFFFFF/linkedin.png"
           alt="LinkedIn"
           class="w-10 h-10"
@@ -92,6 +94,7 @@
       </a>
       <a href="mailto:aya.jafar002@gmail.com" target="_blank">
         <img
+          loading="lazy"
           src="https://img.icons8.com/ios/50/FFFFFF/email.png"
           alt="email"
           class="w-10 h-10"
@@ -110,8 +113,8 @@
     align-items: center;
     padding-top: 2rem;
   }
-  .card{
-@apply p-5
+  .card {
+    @apply p-5;
   }
 
   .card-title {

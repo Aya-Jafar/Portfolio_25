@@ -18,6 +18,7 @@ const props = defineProps({
 <template>
   <a class="card-wrapper" :href="link">
     <img
+     loading="lazy"
       :src="`/assets/artworks/${props.img}.jpg`"
       alt="artwork"
       class="w-full h-full object-cover  hover:border-blue-500"

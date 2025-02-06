@@ -20,7 +20,12 @@ const toggleMenu = () => {
       class="flex gap-2 items-center cursor-pointer font-customFont"
       @click="router.push('/')"
     >
-      <img src="/assets/logo.png" alt="Logo" class="h-10 lg:h-20" />
+      <img
+        src="/assets/logo.png"
+        alt="Logo"
+        class="h-10 lg:h-20"
+        loading="lazy"
+      />
     </div>
 
     <!-- Desktop Nav -->
@@ -35,6 +40,7 @@ const toggleMenu = () => {
     <div class="md:hidden flex items-center">
       <button @click="toggleMenu">
         <img
+          loading="lazy"
           src="https://img.icons8.com/?size=100&id=3096&format=png&color=FFFFFF"
           alt="Menu"
           class="h-8 w-8"
