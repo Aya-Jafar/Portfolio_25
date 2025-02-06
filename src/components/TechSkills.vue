@@ -1,12 +1,11 @@
 <template>
-  <div class="flex gap-4 flex-wrap items-center">
+  <div class="flex gap-4 flex-wrap items-center skills-wrapper">
     <!-- Git -->
     <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
       <img
         src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
         alt="git"
-        width="50"
-        height="40"
+        class="w-10 h-17"
       />
     </a>
 
@@ -15,8 +14,7 @@
       <img
         src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
         alt="python"
-        width="50"
-        height="40"
+        class="w-10 h-17"
       />
     </a>
 
@@ -25,8 +23,7 @@
       <img
         src="https://cdn.worldvectorlogo.com/logos/django.svg"
         alt="django"
-        width="50"
-        height="40"
+        class="w-12 h-17"
       />
     </a>
 
@@ -35,8 +32,7 @@
       <img
         src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg"
         alt="pandas"
-        width="50"
-        height="40"
+        class="w-12 h-17"
       />
     </a>
 
@@ -45,8 +41,7 @@
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"
         alt="scikit_learn"
-        width="50"
-        height="40"
+        class="w-12 h-17"
       />
     </a>
 
@@ -55,8 +50,7 @@
       <img
         src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg"
         alt="tensorflow"
-        width="50"
-        height="40"
+        class="w-12 h-17"
       />
     </a>
 
@@ -65,8 +59,7 @@
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
         alt="react"
-        width="50"
-        height="40"
+        class="w-12 h-17"
       />
     </a>
 
@@ -75,8 +68,7 @@
       <img
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf5OyGM494an0wFKL4bPsMKUEaafxdWda9Ug&s"
         alt="typescript"
-        width="50"
-        height="40"
+        class="w-12 h-17"
       />
     </a>
 
@@ -89,8 +81,7 @@
       <img
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0he5ZG2l7IW_gKKY4dzVuCq-DV5YxXUCwjw&s"
         alt="javascript"
-        width="50"
-        height="40"
+        class="w-12 h-17"
       />
     </a>
 
@@ -103,8 +94,7 @@
       <img
         src="https://cdn.iconscout.com/icon/free/png-256/free-html-5-logo-icon-download-in-svg-png-gif-file-formats--programming-langugae-language-pack-logos-icons-1175208.png"
         alt="html"
-        width="50"
-        height="40"
+        class="w-12 h-17"
       />
     </a>
 
@@ -113,8 +103,7 @@
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"
         alt="tailwind"
-        width="50"
-        height="40"
+        class="w-12 h-17"
       />
     </a>
     <!-- Bootstrap -->
@@ -122,8 +111,7 @@
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png"
         alt="bootstrap"
-        width="50"
-        height="40"
+        class="w-12 h-17"
       />
     </a>
 
@@ -132,8 +120,7 @@
       <img
         src="https://static-00.iconduck.com/assets.00/jest-icon-1855x2048-ifiupldr.png"
         alt="jest"
-        width="50"
-        height="40"
+        class="w-12 h-17"
       />
     </a>
 
@@ -142,8 +129,7 @@
       <img
         src="https://brandeps.com/logo-download/F/Firebase-logo-02.png"
         alt="firebase"
-        width="50"
-        height="40"
+        class="w-12 h-17"
       />
     </a>
 
@@ -152,8 +138,7 @@
       <img
         src="https://img.icons8.com/color/512/vue-js.png"
         alt="vue"
-        width="50"
-        height="40"
+        class="w-12 h-17"
       />
     </a>
 
@@ -161,8 +146,7 @@
       <img
         src="https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo.png"
         alt="hf"
-        width="50"
-        height="40"
+        class="w-12 h-17"
       />
     </a>
     <!-- Figma -->
@@ -170,8 +154,7 @@
       <img
         src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg"
         alt="figma"
-        width="50"
-        height="40"
+        class="w-12 h-17"
       />
     </a>
 
@@ -179,9 +162,21 @@
       <img
         src="https://cdn-images-1.medium.com/max/1200/1*B7NETmU4gIYjuUaAyP9p5g.png"
         alt="i18n"
-        width="50"
-        height="40"
+        class="w-12 h-17"
       />
     </a>
   </div>
 </template>
+
+
+
+<style scoped>
+@media (min-width: 0px) and (max-width: 700px) {
+  .skills-wrapper a img{
+    @apply w-7 h-7
+  }
+}
+
+
+
+</style>

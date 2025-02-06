@@ -20,7 +20,7 @@ const props = defineProps({
     <img
       :src="`/assets/artworks/${props.img}.jpg`"
       alt="artwork"
-      class="w-full h-full object-cover rounded-tl-lg rounded-tr-lg border-[0.1px] border-[rgba(255,255,255,0.3)] hover:border-blue-500"
+      class="w-full h-full object-cover  hover:border-blue-500"
     />
   </a>
 </template>
@@ -28,8 +28,7 @@ const props = defineProps({
 <style scoped>
 @media (min-width: 0px) and (max-width: 700px) {
   .card-wrapper {
-    width: 75% !important;
-    padding-bottom: 2rem;
+    @apply w-full h-auto
   }
   .card-title {
     font-size: 2rem;
@@ -39,7 +38,6 @@ const props = defineProps({
 .card-wrapper {
   @apply border-[rgba(255,255,255,0.3)] border-[0.01px] hover:border-blue-500 cursor-pointer 
          w-auto h-auto bg-[#020911] 
-         min-h-[40vh]  md:min-h-[60vh] 
          rounded-[1vw] flex flex-col items-center relative shadow-lg overflow-hidden;
 }
 

@@ -10,7 +10,7 @@ import Nav from "./Nav.vue";
     <Nav />
 
     <!-- Motto and image container -->
-    <div class="px-20 flex flex-col lg:flex-row items-center mt-10 md:mt-20">
+    <div class="wrapper px-20 flex flex-col lg:flex-row items-center mt-10 md:mt-20">
       <!-- Title & Description -->
       <div
         class="flex flex-col w-full lg:w-1/2 justify-between items-start lg:text-left"
@@ -68,7 +68,7 @@ import Nav from "./Nav.vue";
       </div>
 
       <div
-        class="w-full lg:w-3/5 flex justify-center items-center mt-10 lg:mt-0 bg-[#020911] md:h-[70vh] sm:h-[50vh] h-full rounded-[1vw] overflow-hidden group"
+        class="me w-full lg:w-3/5  flex justify-center items-center mt-10 lg:mt-0 bg-[#020911] md:h-[70vh] sm:h-[50vh] h-full rounded-[1vw] overflow-hidden group"
       >
         <img
           src="/assets/me.png"
@@ -81,6 +81,25 @@ import Nav from "./Nav.vue";
 </template>
 
 <style scoped>
+@media (min-width: 0px) and (max-width: 999px) {
+  .wrapper{
+    @apply px-10 h-[80vh]
+  }
+  .typing{
+    /* @apply text-[3.5rem]; */
+  }
+  p{
+    @apply text-[1.5rem] w-full;
+
+  }
+  .me {
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+
 @keyframes typing {
   from {
     width: 0;

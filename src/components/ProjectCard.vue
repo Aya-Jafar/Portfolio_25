@@ -41,7 +41,7 @@ const props = defineProps({
     <img
       :src="props.img"
       alt=""
-      class="w-full h-[65%] object-cover rounded-tl-lg rounded-tr-lg border-[0.1px] border-[rgba(255,255,255,0.3)] hover:border-blue-500"
+      class="w-full h-[65%] object-cover rounded-tl-[1vw] rounded-tr-[1vw] border-[0.01px] border-[rgba(255,255,255,0.3)] hover:border-blue-500"
     />
 
     <h1 class="card-title">{{ props.title }}</h1>

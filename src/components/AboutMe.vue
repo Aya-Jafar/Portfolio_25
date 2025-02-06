@@ -4,20 +4,20 @@ import TechSkill from "./TechSkills.vue";
 
 <template>
   <div
-  id="about-me"
+    id="about-me"
     class="features bg-[url('/assets/bg-2.png')] h-[100vh] w-screen text-white bg-cover bg-center flex flex-col items-start"
   >
-    <div class="flex lg:flex-row items-start ">
+    <div class="flex lg:flex-row items-start">
       <div class="flex w-full items-start text-left sm:mt-[10vh]">
         <h1
-          class="pl-20 text-[2rem] sm:text-[4.5rem] md:text-[4.5rem] lg:text-[5rem] font-bold font-customFont leading-tight lg:leading-[5rem] xl:leading-[6.5rem] md:h-auto"
+          class="lg:pl-20 text-[2rem] sm:text-[4.5rem] md:text-[4.5rem] lg:text-[5rem] font-bold font-customFont leading-tight lg:leading-[5rem] xl:leading-[6.5rem] md:h-auto"
         >
           About me<br />
         </h1>
       </div>
     </div>
 
-    <div class="flex justify-center flex-wrap w-full gap-5 mt-10">
+    <div class="flex justify-center flex-wrap w-full gap-50">
       <!-- Card -->
       <div
         class="card w-full border-[0.01px] border-transparent hover:border-blue-500 lg:w-[80%] lg:h-[70vh] lg:mt-0 bg-[#020911] md:h-[50vh] rounded-[1vw] flex flex-col gap-5 relative overflow-hidden p-20"
@@ -27,15 +27,15 @@ import TechSkill from "./TechSkills.vue";
         ></div>
 
         <p class="card-subtitle w-full text-balance">
-          I'm a web developer with almost 2 years experience , machine learning enthusiast, and artist who loves
-          crafting beautiful, user-friendly websites. I tinker with AI to build
-          smart solutions and use art as my creative playground. Blending code,
-          intelligence, and creativity, I aim to make experiences that wow,
-          inspire, and innovate!
+          I'm a web developer with almost 2 years experience , machine learning
+          enthusiast, and artist who loves crafting beautiful, user-friendly
+          websites. I tinker with AI to build smart solutions and use art as my
+          creative playground. Blending code, intelligence, and creativity, I
+          aim to make experiences that wow, inspire, and innovate!
         </p>
 
         <h1
-          class="mt-auto text-[1rem] sm:text-[4.5rem] md:text-[4.5rem] lg:text-[2rem] font-bold font-customFont leading-tight lg:leading-[5rem] xl:leading-[6.5rem] md:h-auto"
+          class="mt-auto text-[1rem] sm:text-[4.5rem] md:text-[1.7rem] lg:text-[2rem] font-bold font-customFont leading-tight lg:leading-[5rem] xl:leading-[6.5rem] md:h-auto"
         >
           Technechal skills<br />
         </h1>
@@ -48,8 +48,12 @@ import TechSkill from "./TechSkills.vue";
 <style scoped>
 @media (min-width: 0px) and (max-width: 700px) {
   .features {
-    /* align-items: center; */
-    padding-top:2rem;
+    align-items: center;
+    @apply px-10 h-auto;
+    padding-top: 2rem;
+  }
+  .card {
+    @apply p-5 h-auto ;
   }
 
   .card-title {

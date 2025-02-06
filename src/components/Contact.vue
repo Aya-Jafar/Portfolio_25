@@ -1,17 +1,17 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div
     id="contact"
-    class="features font-customFont bg-[url('/assets/bg-2.png')] h-[110vh] w-screen text-white bg-cover bg-center flex flex-col items-start  pb-20"
+    class="features font-customFont bg-[url('/assets/bg-2.png')] h-[110vh] w-screen text-white bg-cover bg-center flex flex-col items-start pb-20"
   >
-    <div class="px-20 flex lg:flex-row items-start">
-      <div class="flex w-full items-start text-left sm:mt-[10vh]">
+    <div class="px-20 flex lg:flex-row">
+      <!-- Motto & Description -->
+      <div class="flex w-full items-start sm:mt-[10vh]">
         <h1
-          class="pl-20 text-[2rem] sm:text-[4.5rem] md:text-[4.5rem] lg:text-[5rem] font-bold font-customFont leading-tight lg:leading-[5rem] xl:leading-[6.5rem] md:h-auto"
+          class="text-[2rem] sm:text-[4.5rem] md:text-[4.5rem] lg:text-[5rem] font-bold font-customFont leading-tight lg:leading-[5rem] xl:leading-[6.5rem] md:h-auto"
         >
-          Contact Me<br />
+          Contact<br />
         </h1>
       </div>
     </div>
@@ -60,7 +60,7 @@
 
           <button
             type="submit"
-            class="bg-[#013fbd] hover:bg-blue-800  transition-all text-white   py-3 rounded-md mt-3 w-full"
+            class="bg-[#013fbd] hover:bg-blue-800 transition-all text-white py-3 rounded-md mt-3 w-full"
           >
             Send Message
           </button>
@@ -103,8 +103,15 @@
 
 <style scoped>
 @media (min-width: 0px) and (max-width: 700px) {
+  .title {
+    align-items: center;
+  }
   .features {
+    align-items: center;
     padding-top: 2rem;
+  }
+  .card{
+@apply p-5
   }
 
   .card-title {

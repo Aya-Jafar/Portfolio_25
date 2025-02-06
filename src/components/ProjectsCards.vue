@@ -20,14 +20,22 @@ import { allProjects } from "../utils/data.ts";
     </div>
 
     <!-- Cards -->
-    <div class="flex justify-center items-center flex-wrap w-full gap-5 mt-10">
-      <div v-for="(project, index) in allProjects" :key="index">
-        <ProjectCard
-          :path="project.path"
-          :img="project.img"
-          :title="project.title"
-          :subtitle="project.subtitle"
-        />
+    <div class="w-full flex justify-center mt-10">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5"
+      >
+        <div
+          v-for="(project, index) in allProjects"
+          :key="index"
+          class="card-wrapper"
+        >
+          <ProjectCard
+            :path="project.path"
+            :img="project.img"
+            :title="project.title"
+            :subtitle="project.subtitle"
+          />
+        </div>
       </div>
     </div>
 
@@ -47,27 +55,23 @@ import { allProjects } from "../utils/data.ts";
 <style scoped>
 @media (min-width: 0px) and (max-width: 999px) {
   .explorer {
-    padding: 0 5rem;
-    height: 240vh;
+    align-items: center;
+    padding: 0 1.5rem;
+    @apply h-auto pt-20;
   }
 
   .card-wrapper {
     width: 100% !important;
-    padding-bottom: 2rem;
   }
   .card-title {
     font-size: 2rem;
   }
-  /* .icon {
-    height: 7rem;
-    width: 7rem;
-  } */
 }
 
 .card-wrapper {
   @apply border-[rgba(255,255,255,0.3)] border-[0.01px] hover:border-blue-500 cursor-pointer 
          w-full sm:w-[80%] md:w-[45%] lg:w-[28vw] 
-         bg-[#020911] md:h-[40vh] sm:h-full rounded-[1vw] flex flex-col items-center relative;
+         bg-[#020911] md:h-[40vh] lg:h-[40vh] sm:h-full rounded-[1vw] flex flex-col items-center relative;
 }
 
 .card-title {
