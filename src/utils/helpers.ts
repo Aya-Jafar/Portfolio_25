@@ -28,10 +28,11 @@ export const getTitleFontSize = (title: string) => {
 
 export const getSubTitleFontSize = (title: string) => {
   const length = title.length;
-  if (length <= 20) {
-    return "1.1rem";
-  } else if (length <= 30) {
-    return "1.4rem";
+  // if (length <= 50) {
+  //   return "1.2rem";
+  // } else
+   if (length <= 30) {
+    return "1.3rem";
   } else {
     return "1rem";
   }

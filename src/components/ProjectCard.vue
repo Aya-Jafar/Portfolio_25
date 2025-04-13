@@ -62,7 +62,7 @@ const props = defineProps({
       :style="{ fontSize: getSubTitleFontSize(props.subtitle) }"
       :title="props.subtitle"
     >
-      {{ truncateText(props.subtitle, 40) }}
+      {{ truncateText(props.subtitle, 50) }}
     </p>
   </div>
 </template>

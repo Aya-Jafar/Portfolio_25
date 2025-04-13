@@ -4,7 +4,7 @@ export const allProjects = [
     img: "/assets/projects/ai-art.png",
     title: "AI Artistry",
     subtitle:
-      "React.js , Django , Websockets, Firebase , Gemini API, huggingface",
+      "React.js, Django, Firebase, Gemini API, Websockets, huggingface",
 
     description: `
      Art generation image web app with <span style="font-weight: bold;">React.js</span>,
@@ -52,7 +52,7 @@ export const allProjects = [
     path: "/project/Dashboard demo",
     img: "/assets/projects/dashboard-result.png",
     title: "Dashboard demo",
-    subtitle: "Vue.js practise project with Mock.API and simulated web socket",
+    subtitle: "Vue.js, TypeScript, Mock.API",
     description: `Vue.js practise project with Mock.API and simulated web socket built with <span style="font-weight: bold;">Vue 3,TypeScript and Vite<span>`,
 
     extraImages: [
