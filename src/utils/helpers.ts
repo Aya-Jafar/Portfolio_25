@@ -1,9 +1,16 @@
 export const scrollToSection = (sectionId: string) => {
+  const currentPath = window.location.pathname;
+
+  if (currentPath !== "/") {
+    window.location.href = `/#${sectionId}`;
+    return;
+  }
+
   const section = document.getElementById(sectionId);
   if (section) {
     section.scrollIntoView({
       behavior: "smooth",
-      block: "start", // scrolls to the top of the section
+      block: "start",
     });
   }
 };
