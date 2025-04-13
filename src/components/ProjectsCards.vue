@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard.vue";
 import { allProjects } from "../utils/data.ts";
 import { useIntersectionObserver } from "../composables/useIntersectionObserver.ts";
 
-const { isInView, targetRef } = useIntersectionObserver(0.2);
+const { isInView, targetRef } = useIntersectionObserver(0.3);
 </script>
 
 <template>
@@ -24,18 +24,18 @@ const { isInView, targetRef } = useIntersectionObserver(0.2);
     </div>
 
     <!-- Cards -->
-    <div class="w-full flex justify-center mt-10">
+    <div class="w-full flex justify-center items-center mt-10">
       <div
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5"
       >
         <div
           v-for="(project, index) in allProjects"
           :key="index"
-          class="card-wrapper transition-all duration-700 ease-in-out"
           :class="{
             'opacity-100 translate-y-0': isInView,
             'opacity-0 translate-y-10': !isInView,
           }"
+          class="card-wrapper transition-all duration-700 ease-in-out"
         >
           <ProjectCard
             :path="project.path"
@@ -47,7 +47,7 @@ const { isInView, targetRef } = useIntersectionObserver(0.2);
       </div>
     </div>
 
-    <div class="flex items-center justify-center w-full mt-10">
+    <div class="flex items-center justify-center w-full">
       <a href="https://github.com/Aya-Jafar" target="_blank">
         <button
           type="button"

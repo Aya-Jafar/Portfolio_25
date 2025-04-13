@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import { useRouter } from "vue-router";
-import { getTitleFontSize } from "../utils/helpers";
+import {
+  getTitleFontSize,
+  getSubTitleFontSize,
+  truncateText,
+} from "../utils/helpers";
 
 const router = useRouter();
 
@@ -31,8 +35,6 @@ const props = defineProps({
     default: "",
   },
 });
-
-
 </script>
 
 <template>
@@ -48,10 +50,20 @@ const props = defineProps({
       class="w-full h-[65%] object-cover rounded-tl-[1vw] rounded-tr-[1vw] border-[0.01px] border-[rgba(255,255,255,0.3)] hover:border-blue-500"
     />
 
-    <h1 class="card-title" :style="{ fontSize: getTitleFontSize(props.title) }">
-      {{ props.title }}
+    <h1
+      class="card-title"
+      :style="{ fontSize: getTitleFontSize(props.title) }"
+      :title="props.title"
+    >
+      {{ truncateText(props.title) }}
     </h1>
-    <p class="card-subtitle">{{ props.subtitle }}</p>
+    <p
+      class="card-subtitle"
+      :style="{ fontSize: getSubTitleFontSize(props.subtitle) }"
+      :title="props.subtitle"
+    >
+      {{ truncateText(props.subtitle, 40) }}
+    </p>
   </div>
 </template>
 

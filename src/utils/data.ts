@@ -44,12 +44,36 @@ export const allProjects = [
     ],
     githubLink: "https://github.com/Aya-Jafar/Heal-Tech.AI-remake",
     activeLink: "https://heal-tech-ai.netlify.app/",
-    extraImages: [
-      "/assets/projects/heal1.png",
-      "/assets/projects/heal2.png",
-    ],
+    extraImages: ["/assets/projects/heal1.png", "/assets/projects/heal2.png"],
     colors: ["#040A21", "#0546C6", "#0283CB", "#01E8FE", "#B20D6C", "#F33E73"],
   },
+
+  {
+    path: "/project/Dashboard demo",
+    img: "/assets/projects/dashboard-result.png",
+    title: "Dashboard demo",
+    subtitle: "Vue.js practise project with Mock.API and simulated web socket",
+    description: `Vue.js practise project with Mock.API and simulated web socket built with <span style="font-weight: bold;">Vue 3,TypeScript and Vite<span>`,
+
+    extraImages: [
+      "/assets/projects/dashboard.jpg",
+      "/assets/projects/tree.png",
+      "/assets/projects/image.png",
+    ],
+    features: [
+      `🌳 Dynamic tree view with <span style="font-weight: bold;">lazy loading</span> and <span style="font-weight: bold;">virtualization</span> and <span style="font-weight: bold;">recursive component</span> rendering.`,
+      "📊 Real-time dashboard with mock WebSocket updates.",
+      `📈 <span style="font-weight: bold;">ApexCharts</span> integration for sleek data visualization.`,
+      `🧪 <span style="font-weight: bold;"> Mock API</span> with multi-endpoint fetching simulating distributed data sources.`,
+      `🌍 Localization to Arabic with <span style="font-weight: bold;">i18n</span>`,
+    ],
+
+    githubLink: "https://github.com/Aya-Jafar/SWE-task",
+    activeLink: "https://demo-tasks.netlify.app/",
+
+    colors: ["#020E1F", "#0E172D","#0281CB", "#4C39FA", "#9089FF", "#75D7B5"],
+  },
+
   {
     path: "/project/Sound Shop",
     img: "/assets/projects/Medium Banner Landscape Design.png",
@@ -58,10 +82,7 @@ export const allProjects = [
     description:
       "React and Django e-commerce web app for music instruments with Paypal integration",
 
-    extraImages: [
-      "/assets/projects/sound1.png",
-      "/assets/projects/sound2.png",
-    ],
+    extraImages: ["/assets/projects/sound1.png", "/assets/projects/sound2.png"],
     features: [
       "🛒 E-commerce for music instruments with PayPal integration.",
       "⚙️ Django backend for product and transaction management.",
@@ -89,10 +110,7 @@ export const allProjects = [
     ],
 
     githubLink: "https://github.com/Aya-Jafar/resturant-site-ui",
-    extraImages: [
-      "/assets/projects/res1.png",
-      "/assets/projects/res2.png",
-    ],
+    extraImages: ["/assets/projects/res1.png", "/assets/projects/res2.png"],
     colors: ["#020608", "#222224", "#646464", "#313E01", "#604522"],
   },
   {
@@ -110,10 +128,7 @@ export const allProjects = [
       "🎨 Styled with modern CSS for a smooth user experience.",
     ],
 
-    extraImages: [
-      "/assets/projects/lemon1.png",
-      "/assets/projects/lemon2.png",
-    ],
+    extraImages: ["/assets/projects/lemon1.png", "/assets/projects/lemon2.png"],
 
     colors: ["#2B292B", "#495E57", "#F4CE15", "#FFFFFF"],
   },
@@ -156,10 +171,7 @@ export const allProjects = [
     ],
     githubLink: "https://github.com/Aya-Jafar/books-library-react-app",
 
-    extraImages: [
-      "/assets/projects/books1.png",
-      "/assets/projects/books2.png",
-    ],
+    extraImages: ["/assets/projects/books1.png", "/assets/projects/books2.png"],
     colors: ["#000000", "#F43E54", "#1B7FD0", "#FEFEFE"],
   },
 

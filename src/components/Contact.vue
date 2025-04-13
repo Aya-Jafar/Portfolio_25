@@ -25,8 +25,7 @@
         ></div>
 
         <p class="card-subtitle w-full text-balance">
-          Have a question, project idea, or just want to say hi? Drop me a
-          message below, and I'll get back to you soon!
+          Drop me a message below, and I'll get back to you soon!
         </p>
 
         <form

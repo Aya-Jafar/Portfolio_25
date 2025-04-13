@@ -42,12 +42,8 @@ onMounted(() => {
           v-if="currentData?.features"
           >Features:</span
         >
-        <ul
-          class="list-none space-y-2 text-gray-300 mt-1 lg:text-[1.3rem]"
-          v-for="feature in currentData?.features"
-        >
-          <li>- {{ feature }}</li>
-        </ul>
+
+        <li v-for="feature in currentData.features" v-html="feature"></li>
       </div>
     </template>
 

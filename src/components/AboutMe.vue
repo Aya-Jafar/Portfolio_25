@@ -42,7 +42,7 @@ const { isInView, targetRef } = useIntersectionObserver(0.3);
           learning enthusiast, and an artist who loves crafting beautiful,
           user-friendly websites. I tinker with AI to build smart solutions and
           use art as my creative playground. Blending code, intelligence, and
-          creativity, I aim to make experiences that wow, inspire, and innovate!
+          creativity, I aim to make experiences that wow, inspire!
         </p>
 
         <h1

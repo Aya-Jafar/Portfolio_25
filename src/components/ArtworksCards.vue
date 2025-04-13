@@ -18,7 +18,7 @@ const setHoveredArtwork = (newValue: any) => (hoveredArtwork.value = newValue);
   >
     <div class="px-20 flex lg:flex-row">
       <!-- Motto & Description -->
-      <div class="flex w-full items-start sm:mt-[10vh]">
+      <div class="flex w-full items-start sm:mt-[10vh] mt-20">
         <h1
           class="text-[2rem] sm:text-[4.5rem] md:text-[4.5rem] lg:text-[5rem] font-bold font-customFont leading-tight lg:leading-[5rem] xl:leading-[6.5rem] md:h-auto"
         >
@@ -37,11 +37,11 @@ const setHoveredArtwork = (newValue: any) => (hoveredArtwork.value = newValue);
           :key="index"
           :onMouseOver="() => setHoveredArtwork(artwork)"
           :onMouseOut="() => setHoveredArtwork(null)"
-          class="relative group w-full transition-all duration-700 ease-in-out"
           :class="{
             'opacity-100 translate-y-0': isInView,
             'opacity-0 translate-y-10': !isInView,
           }"
+          class="relative group w-full transition-all duration-700 ease-in-out"
         >
           <ArtworkCard :img="`${index + 1}`" :link="artwork.link" />
           <a

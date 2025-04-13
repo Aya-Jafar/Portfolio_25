@@ -32,7 +32,7 @@ const filteredSlotNames = computed(() => {
       <!-- Options Section -->
       <div class="flex-col w-full lg:w-[40%] space-y-5">
         <div v-for="(slotName, index) in filteredSlotNames" :key="index">
-          <slot :name="slotName"></slot>
+          <slot :name="slotName" ></slot>
         </div>
       </div>
 
