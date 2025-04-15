@@ -4,7 +4,7 @@ import { artworks } from "../utils/data";
 import ArtworkCard from "./ArtworkCard.vue";
 import { useIntersectionObserver } from "../composables/useIntersectionObserver";
 
-const { isInView, targetRef } = useIntersectionObserver(0.3);
+const { isInView, targetRef } = useIntersectionObserver(0.2);
 const hoveredArtwork = ref(null);
 
 const setHoveredArtwork = (newValue: any) => (hoveredArtwork.value = newValue);
